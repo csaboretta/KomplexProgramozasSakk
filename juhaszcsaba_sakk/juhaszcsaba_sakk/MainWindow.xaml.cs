@@ -63,19 +63,25 @@ namespace juhaszcsaba_sakk
         private void Kattintas(object sender, MouseButtonEventArgs e)
         {
             Rectangle kijelolt = sender as Rectangle;
-            int x, y;
+            int x = -1, y = -1;
             for (int i = 0; i < 8; i++)
             {
-                for (int j = 0; j < 8 j++)
+                for (int j = 0; j < 8; j++)
                 {
                     if (mezok[i, j].Equals(kijelolt))
                     {
                        x = i;
-                        y = j;
+                       y = j;
                     }
                 }
             }
+            Label pozicio = new Label();
+            pozicio.Content = $"({x} , {y})";
+            tabla.Children.Add(pozicio);
+            Grid.SetColumn(pozicio, y);
+            Grid.SetRow(pozicio, x);
         }
+
 
     }
 }

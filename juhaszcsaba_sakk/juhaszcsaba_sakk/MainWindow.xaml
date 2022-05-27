@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:juhaszcsaba_sakk"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="800">
     <Grid>
+        <ComboBox HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" Width="494"/>
+        <Grid Name="tabla" Height="600" Width="600"/>
 
     </Grid>
 </Window>
