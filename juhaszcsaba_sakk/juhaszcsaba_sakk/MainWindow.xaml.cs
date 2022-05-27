@@ -20,6 +20,8 @@ namespace juhaszcsaba_sakk
     /// </summary>
     public partial class MainWindow : Window
     {
+        Rectangle[,] mezok;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,9 +32,50 @@ namespace juhaszcsaba_sakk
         {
             for (int i = 0; i < 8; i++)
             {
-                tabla.RowDefinitions.Add(new RowDefinition);
-                tabla.ColumnDefinitions.Add(new ColumnDefinition);
+                tabla.RowDefinitions.Add(new RowDefinition());
+                tabla.ColumnDefinitions.Add(new ColumnDefinition());
+            }
+
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8; j++)
+                {
+                    Rectangle uj = new Rectangle();
+                    uj.Stroke = Brushes.Black;
+                    if ((i+j) % 2 == 0)
+                    {
+                        uj.Fill = Brushes.White;
+                    }
+                    else
+                    {
+                        uj.Fill = Brushes.Black;
+                    }
+                    uj.MouseUp += Kattintas;
+                    mezok[i, j] = uj;
+                    tabla.Children.Add(mezok[i, j]);
+                    Grid.SetRow(mezok[i, j], i);
+                    Grid.SetColumn(mezok[i, j], j);
+
+                }
             }
         }
+
+        private void Kattintas(object sender, MouseButtonEventArgs e)
+        {
+            Rectangle kijelolt = sender as Rectangle;
+            int x, y;
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j = 0; j < 8 j++)
+                {
+                    if (mezok[i, j].Equals(kijelolt))
+                    {
+                       x = i;
+                        y = j;
+                    }
+                }
+            }
+        }
+
     }
 }
