@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bogi\\source\\repos\\juhaszcsaba_sakk\\juhaszcsaba_sakk\\juhaszcsaba_sakk.csproj": {}
+    "C:\\Users\\Bogi\\source\\repos\\Sakklepesek - Juhász Csaba\\juhaszcsaba_sakk\\juhaszcsaba_sakk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bogi\\source\\repos\\juhaszcsaba_sakk\\juhaszcsaba_sakk\\juhaszcsaba_sakk.csproj": {
+    "C:\\Users\\Bogi\\source\\repos\\Sakklepesek - Juhász Csaba\\juhaszcsaba_sakk\\juhaszcsaba_sakk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bogi\\source\\repos\\juhaszcsaba_sakk\\juhaszcsaba_sakk\\juhaszcsaba_sakk.csproj",
+        "projectUniqueName": "C:\\Users\\Bogi\\source\\repos\\Sakklepesek - Juhász Csaba\\juhaszcsaba_sakk\\juhaszcsaba_sakk.csproj",
         "projectName": "juhaszcsaba_sakk",
-        "projectPath": "C:\\Users\\Bogi\\source\\repos\\juhaszcsaba_sakk\\juhaszcsaba_sakk\\juhaszcsaba_sakk.csproj",
+        "projectPath": "C:\\Users\\Bogi\\source\\repos\\Sakklepesek - Juhász Csaba\\juhaszcsaba_sakk\\juhaszcsaba_sakk.csproj",
         "packagesPath": "C:\\Users\\Bogi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bogi\\source\\repos\\juhaszcsaba_sakk\\juhaszcsaba_sakk\\obj\\",
+        "outputPath": "C:\\Users\\Bogi\\source\\repos\\Sakklepesek - Juhász Csaba\\juhaszcsaba_sakk\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bogi\\AppData\\Roaming\\NuGet\\NuGet.Config",
